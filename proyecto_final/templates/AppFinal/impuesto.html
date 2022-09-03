@@ -1,0 +1,30 @@
+
+{% extends 'index.html' %}
+
+{% block title %}
+Impuesto 1
+{% endblock %}
+
+{% block inicio %}
+
+    En esta página podrán ver los datos de los impuestos:
+        <br>
+        <br>
+    Impuesto 1:
+        <br>
+        <br>
+    Nombre: {{impuestos.nombre}}
+        <br>
+    Apellido: {{impuestos.apellido}}
+        <br>
+    Edad: {{impuestos.edad}}
+        <br>
+    Mail: {{impuestos.mail}}
+
+    {% for impuesto in impuestos %}
+    El nombre del impuesto es {{impuestos.nombre }} y el apellido es {{impuestos.apellido}}
+    
+    <br>
+    {% endfor %}
+
+{% endblock %}

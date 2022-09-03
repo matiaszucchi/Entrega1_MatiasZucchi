@@ -1,0 +1,30 @@
+
+{% extends 'index.html' %}
+
+{% block title %}
+Responsable Inscripto 1
+{% endblock %}
+
+{% block inicio %}
+
+    En esta página podrán ver los datos de los responsables inscriptos:
+        <br>
+        <br>
+    Responsable Inscripto 1:
+        <br>
+        <br>
+    Nombre: {{responsable_inscripto.nombre}}
+        <br>
+    Apellido: {{responsable_inscripto.apellido}}
+        <br>
+    Edad: {{responsable_inscripto.edad}}
+        <br>
+    Mail: {{responsable_inscripto.mail}}
+
+    {% for responsable in responsable_inscripto %}
+    El nombre del responsable inscripto es {{responsable_inscripto.nombre }} y el apellido es {{responsable_inscripto.apellido}}
+    
+    <br>
+    {% endfor %}
+
+{% endblock %}

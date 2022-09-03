@@ -1,0 +1,30 @@
+
+{% extends 'index.html' %}
+
+{% block title %}
+Familiar 1
+{% endblock %}
+
+{% block inicio %}
+
+    En esta página podrán ver los datos de los monotributistas:
+        <br>
+        <br>
+    Monotributista 1:
+        <br>
+        <br>
+    Nombre: {{monotributista.nombre}}
+        <br>
+    Apellido: {{monotributista.apellido}}
+        <br>
+    Edad: {{monotributista.edad}}
+        <br>
+    Mail: {{monotributista.mail}}
+
+    {% for monitrubutista in monotributistas %}
+    El nombre del monotributista es {{monotributista.nombre }} y el apellido es {{monotributista.apellido}}
+    
+    <br>
+    {% endfor %}
+
+{% endblock %}

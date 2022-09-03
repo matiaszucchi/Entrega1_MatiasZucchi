@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Formulario
+{% endblock %}
+
+{% block inicio %}
+
+
+    <form action="" method="POST">
+
+    {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+
+{% endblock %}
