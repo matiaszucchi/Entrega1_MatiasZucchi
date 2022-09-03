@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Formulario
+{% endblock %}
+
+{% block inicio %}
+
+
+ {% for monotributista in monotributistas %}
+    El nombre del monotributista es {{monotributista.nombre }} y el apellido es {{monotributista.apellido}}
+    <br>
+    {% endfor %}
+
+{% endblock %}

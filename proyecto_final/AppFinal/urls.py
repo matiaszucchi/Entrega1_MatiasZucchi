@@ -8,5 +8,7 @@ urlpatterns = [
     path('responsableinscripto/', responsable_inscripto, name='AppFinalResponsable'),
     path('impuesto/', impuestos, name='AppFinalImpuesto'),
     path('formulario/', formulario, name='AppFinalFormulario'),
+    path('busqueda_nombre/', busqueda_nombre, name='AppFinalBusquedaNombre'),
+    path('busqueda_nombre_post/', busqueda_nombre_post, name='AppFinalBusquedaNombrePost'),
     
 ]

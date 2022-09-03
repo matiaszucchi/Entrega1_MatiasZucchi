@@ -77,3 +77,29 @@ def formulario(request):
     }
     
     return render (request, 'AppFinal/formulario.html', contexto)
+
+
+
+def busqueda_nombre(request):
+    
+    contexto = {
+        
+        'form': BusquedaNombreFormulario(),
+    
+    }
+    
+    return render(request, 'AppFinal/busqueda_nombre.html', contexto)
+
+
+def busqueda_nombre_post(request):
+    
+    nombre = request.GET.get('nombre')
+    
+    monotributista = Familiar.objects.filter(nombre__icontains=nombre)
+    
+    contexto = {
+        
+        'monotributista':monotributista
+    }
+    
+    return render (request, 'AppFinal/formulario_filtrado.html', contexto)
