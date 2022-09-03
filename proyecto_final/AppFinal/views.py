@@ -4,7 +4,7 @@ from mailbox import NoSuchMailboxError
 from django.http import HttpResponse
 from datetime import datetime
 from django.contrib import messages
-from AppFinal.forms import Formulario
+from AppFinal.forms import *
 from AppFinal.models import Impuestos, Monotributista, ResponsableInscripto
 
 
@@ -79,7 +79,6 @@ def formulario(request):
     return render (request, 'AppFinal/formulario.html', contexto)
 
 
-
 def busqueda_nombre(request):
     
     contexto = {
@@ -95,7 +94,7 @@ def busqueda_nombre_post(request):
     
     nombre = request.GET.get('nombre')
     
-    monotributista = Familiar.objects.filter(nombre__icontains=nombre)
+    monotributista = Monotributista.objects.filter(nombre__icontains=nombre)
     
     contexto = {
         
