@@ -2,7 +2,7 @@
 {% extends 'index.html' %}
 
 {% block title %}
-Monotributista 1
+Monotributistas
 {% endblock %}
 
 {% block inicio %}
@@ -13,13 +13,17 @@ Monotributista 1
     Monotributista 1:
         <br>
         <br>
-    Nombre: {{monotributista.nombre}}
+    categoria: {{monotributista1.categoria}}    
         <br>
-    Apellido: {{monotributista.apellido}}
+    Nombre: {{monotributista1.nombre}}
         <br>
-    Edad: {{monotributista.edad}}
+    Apellido: {{monotributista1.apellido}}
         <br>
-    Mail: {{monotributista.mail}}
+    Edad: {{monotributista1.edad}}
+        <br>
+    Mail: {{monotributista1.mail}}
+    <br>
+    <br>
 
     {% for monitrubutista in monotributistas %}
     El nombre del monotributista es {{monotributista.nombre }} y el apellido es {{monotributista.apellido}}

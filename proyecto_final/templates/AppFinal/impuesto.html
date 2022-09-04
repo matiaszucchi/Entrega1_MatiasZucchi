@@ -2,7 +2,7 @@
 {% extends 'index.html' %}
 
 {% block title %}
-Impuesto 1
+Impuestos
 {% endblock %}
 
 {% block inicio %}
@@ -13,13 +13,17 @@ Impuesto 1
     Impuesto 1:
         <br>
         <br>
-    Nombre: {{impuestos.nombre}}
+    AsesoramientoFiscal:{{impuestos1.asesoramientoFiscal}}
         <br>
-    Apellido: {{impuestos.apellido}}
+    Nombre: {{impuestos1.nombre}}
         <br>
-    Edad: {{impuestos.edad}}
+    Apellido: {{impuestos1.apellido}}
         <br>
-    Mail: {{impuestos.mail}}
+    Edad: {{impuestos1.edad}}
+        <br>
+    Mail: {{impuestos1.mail}}
+        <br>
+        <br>
 
     {% for impuesto in impuestos %}
     El nombre del impuesto es {{impuestos.nombre }} y el apellido es {{impuestos.apellido}}

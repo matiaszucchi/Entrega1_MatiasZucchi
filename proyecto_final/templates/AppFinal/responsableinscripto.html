@@ -2,7 +2,7 @@
 {% extends 'index.html' %}
 
 {% block title %}
-Responsable Inscripto 1
+Responsables Inscriptos
 {% endblock %}
 
 {% block inicio %}
@@ -13,13 +13,18 @@ Responsable Inscripto 1
     Responsable Inscripto 1:
         <br>
         <br>
-    Nombre: {{responsable_inscripto.nombre}}
+    Sociedad:{{responsable_inscripto1.sociedad}}
+        <br> 
+    Nombre: {{responsable_inscripto1.nombre}}
         <br>
-    Apellido: {{responsable_inscripto.apellido}}
+    Apellido: {{responsable_inscripto1.apellido}}
         <br>
-    Edad: {{responsable_inscripto.edad}}
+    Edad: {{responsable_inscripto1.edad}}
         <br>
-    Mail: {{responsable_inscripto.mail}}
+    Mail: {{responsable_inscripto1.mail}}
+    <br>
+    <br>
+
 
     {% for responsable in responsable_inscripto %}
     El nombre del responsable inscripto es {{responsable_inscripto.nombre }} y el apellido es {{responsable_inscripto.apellido}}
