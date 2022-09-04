@@ -63,7 +63,7 @@ def formulario(request):
             
             data = miFormulario.cleaned_data
             
-            formulario1 = Monotributista(nombre=data.get('nombre'), apellido=data.get('apellido'),edad=data.get('edad'),email=data.get('email'))
+            formulario1 = Monotributista(nombre=data.get('nombre'), apellido=data.get('apellido'),edad=data.get('edad'),mail=data.get('mail'))
             formulario1.save()
             
             return redirect('AppFinalFormulario')
