@@ -6,10 +6,10 @@ class Monotributista(models.Model):
     nombre = models.CharField(max_length=30,)
     apellido = models.CharField(max_length=30,)
     edad = models.PositiveIntegerField()
-    mail = models.EmailField(verbose_name='email', max_length=50)
+    mail = models.EmailField(max_length=50)  #verbose_name='email',
     
     def __str__(self):
-        return f"Nombre: {self.nombre}, Apellido: {self.apellido}, Categoria: {self.categoria}, E-mail: {self.mail}"
+        return f"Nombre: {self.nombre}, Apellido: {self.apellido}, Categoria: {self.categoria}, mail: {self.mail}"
     
     
 class ResponsableInscripto(models.Model):

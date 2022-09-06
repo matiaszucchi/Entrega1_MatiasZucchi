@@ -14,8 +14,22 @@ Formulario
 
         <input type="submit" value="Enviar">
 
-
+        
     </form>
+
+    <h2><b> Muestra de DB </b></h2>
+
+    {% for monotributista in monotributistas%}
+       
+    El nombre del monotributista es: {{ monotributista.nombre }}
+    Su apellido:{{ monotributista.apellido }}
+    Su edad:{{ monotributista.edad }}
+    Su E-mail es: {{ monotributista.mail }}
+    <br>
+    <br>
+
+
+    {% endfor%}
 
 
 {% endblock %}

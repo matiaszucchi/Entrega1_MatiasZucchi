@@ -68,12 +68,12 @@ def formulario(request):
             
             return redirect('AppFinalFormulario')
         
-    
+    monotributistas = Monotributista.objects.all()
     
     contexto = {
         
         'form':Formulario(),
-        
+        'monotributistas':monotributistas
        
     }
     
@@ -95,11 +95,11 @@ def busqueda_nombre_post(request):
     
     nombre = request.GET.get('nombre')
     
-    monotributista = Monotributista.objects.filter(nombre__icontains=nombre)
+    monotributistas = Monotributista.objects.filter(nombre__icontains=nombre)
     
     contexto = {
         
-        'monotributista':monotributista
-    }
+        'monotributistas': monotributistas    
+        }
     
     return render (request, 'AppFinal/formulario_filtrado.html', contexto)

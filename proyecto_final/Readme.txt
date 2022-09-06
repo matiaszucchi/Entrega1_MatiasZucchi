@@ -37,3 +37,7 @@ http://localhost:8000/AppFinal/impuesto/ se puede encontrar los impuestos precar
 http://localhost:8000/AppFinal/formulario/ se puede cargar datos en formulario
 
 http://localhost:8000/AppFinal/busqueda_nombre/ se puede buscar por nombre a los datos que estan cargados en la base de datos
+
+http://localhost:8000/admin  ingreso con usuario ADMIN pswd: 1234 (panel administrativo)
+
+

@@ -11379,3 +11379,18 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+#flista {  
+  text-align: center;
+}
+
+#flista li {
+margin: 15px 0px;
+font-weight: bolder;
+border: #0dcaf0;
+border-radius: 15px; 
+
+
+
+
+}
