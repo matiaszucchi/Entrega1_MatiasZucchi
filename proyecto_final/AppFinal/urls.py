@@ -2,7 +2,7 @@ from django.urls import path
 from AppFinal.views import *
 
 urlpatterns = [
-
+    
     path('', inicio, name='AppFinalInicio'),
     path('monotributista/', monotributista, name='AppFinalMonotributista'),
     path('responsableinscripto/', responsable_inscripto, name='AppFinalResponsable'),
@@ -10,5 +10,7 @@ urlpatterns = [
     path('formulario/', formulario, name='AppFinalFormulario'),
     path('busqueda_nombre/', busqueda_nombre, name='AppFinalBusquedaNombre'),
     path('busqueda_nombre_post/', busqueda_nombre_post, name='AppFinalBusquedaNombrePost'),
-    path('about/', about, name='AppFinalAbout'),
+    path('eliminar_nombre/', eliminar_nombre, name='AppFinalEliminarNombre'),
+    path('editar_nombre/', editar_nombre, name='AppFinalEditarNombre'),
+
 ]
