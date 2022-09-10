@@ -10,5 +10,5 @@ urlpatterns = [
     path('formulario/', formulario, name='AppFinalFormulario'),
     path('busqueda_nombre/', busqueda_nombre, name='AppFinalBusquedaNombre'),
     path('busqueda_nombre_post/', busqueda_nombre_post, name='AppFinalBusquedaNombrePost'),
-    
+    path('about/', about, name='AppFinalAbout'),
 ]

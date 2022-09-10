@@ -103,3 +103,8 @@ def busqueda_nombre_post(request):
         }
     
     return render (request, 'AppFinal/formulario_filtrado.html', contexto)
+
+
+def about(request):
+    
+    return render(request, 'index.html')
