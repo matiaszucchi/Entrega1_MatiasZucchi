@@ -27,8 +27,8 @@ Monotributistas
 
     {% for monotributista in monotributistas %}
         El nombre del monotributista es {{monotributista.nombre }} y el apellido es {{monotributista.apellido}}
-        <a href="{% url 'AppFinalEliminarNombre' monotribustista.nombre monotributista.apellido %}">-X-</a>
-        <a href="{% url 'AppFinalEditarNombre' monotribustista.nombre monotributista.apellido %}">Editar</a>
+        {% comment %} <a href="{% url 'AppFinalEliminarNombre' monotribustista.nombre monotributista.apellido %}">-X-</a>
+        <a href="{% url 'AppFinalEditarNombre' monotribustista.nombre monotributista.apellido %}">Editar</a> {% endcomment %}
 
     <br>
     {% endfor %}

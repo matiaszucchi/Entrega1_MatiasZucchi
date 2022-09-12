@@ -10,7 +10,7 @@ urlpatterns = [
     path('formulario/', formulario, name='AppFinalFormulario'),
     path('busqueda_nombre/', busqueda_nombre, name='AppFinalBusquedaNombre'),
     path('busqueda_nombre_post/', busqueda_nombre_post, name='AppFinalBusquedaNombrePost'),
-    path('eliminar_nombre/', eliminar_nombre, name='AppFinalEliminarNombre'),
-    path('editar_nombre/', editar_nombre, name='AppFinalEditarNombre'),
+    # path('eliminar_nombre/', eliminar_nombre, name='AppFinalEliminarNombre'),
+    # path('editar_nombre/', editar_nombre, name='AppFinalEditarNombre'),
 
 ]
