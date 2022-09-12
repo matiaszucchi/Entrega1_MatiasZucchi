@@ -103,3 +103,48 @@ def busqueda_nombre_post(request):
         }
     
     return render (request, 'AppFinal/formulario_filtrado.html', contexto)
+
+
+
+# def eliminar_nombre(request,nombre):
+#     eliminar_nombre = Monotributista.objects.get(nombre=nombre)
+#     eliminar_nombre.delete()
+    
+#     messages.info(request, f"El nombre {eliminar_nombre} fue eliminado")
+    
+#     return redirect("AppFinalMonotributista")
+
+
+# def editar_nombre(request, nombre):
+#     editar_nombre = Monotributista.objects.get(nombre=nombre)
+    
+#     if request.method == 'POST':
+#         miFormulario = Formulario(request.POST)
+        
+#         if miFormulario.is_valid():
+            
+#             data = miFormulario.cleaned_data
+            
+#             editar_nombre.nombre = data.get('nombre')
+#             editar_nombre.apellido = data.get('apellido')
+#             editar_nombre.edad = data.get('edad')
+#             editar_nombre.mail = data.get('mail')
+            
+#             editar_nombre.save()
+            
+#             return redirect('AppFinalFormulario')
+    
+    
+    
+#     contexto = {
+#         'form': Formulario(
+#             initial={
+#             "nombre": editar_nombre.nombre,
+#             "apellido": editar_nombre.appelido,
+            
+#             } 
+#         )  
+#     }
+    
+#     return render (request, 'AppFinal/formulario.html', contexto)
+
